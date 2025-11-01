@@ -1,0 +1,4 @@
+{
+  "server_component": { "title": "This is a server Component " },
+  "client_component": { "title": "This is a client Component " }
+}

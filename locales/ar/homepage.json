@@ -1,0 +1,4 @@
+{
+  "server_component": { "title": "هذا عنصر تم انشائه من الخادم " },
+  "client_component": { "title": "هذا عنصر تم انشائه من المتصفح " }
+}
