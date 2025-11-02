@@ -14,21 +14,21 @@ export default async function Hero({ locale }: { locale: string }) {
             <div className="w-full text-center justify-start text-text-default-heading text-5xl font-semibold leading-[56px]">
               {t("homepage.hero.title")}
             </div>
-            <div className="self-stretch text-center justify-start text-text-default-heading text-xl font-medium font-['Brando_Sans_TEST'] leading-8">
+            <div className="self-stretch text-center justify-start text-text-default-heading font-brando text-xl leading-8">
               {t("homepage.hero.subtitle")}
             </div>
           </div>
 
-          <form className="mx-auto mt-6 flex max-w-xl items-center gap-2 rounded-xl bg-white/70 dark:bg-[#102047] p-1 shadow"
+          <form className="mx-auto h-[54px] mt-6 flex max-w-[28rem] items-center gap-2 rounded-[12px] bg-[#ffffff80] dark:bg-[#102047] p-1 shadow"
           dir="ltr">
             <input
               type="tel"
-              className="h-12 flex-1 rounded-lg px-4 outline-none placeholder:text-slate-400 dark:bg-transparent"
+              className="h-12 flex-1 rounded-lg px-4 outline-none placeholder:text-slate-400 bg-transparent dark:bg-transparent"
               placeholder={t("homepage.hero.placeholder")}
             />
             <button
               type="submit"
-              className="h-11 shrink-0 rounded-lg bg-lime-500 px-5 font-semibold text-white"
+              className="h-12 w-[89px] shrink-0 rounded-lg bg-lime-500 px-5 font-semibold text-base text-[#0B1A3E] dark:text-[#fff]"
             >
               {t("homepage.hero.button")}
             </button>

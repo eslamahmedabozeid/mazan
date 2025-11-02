@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @import './fonts.css'; */
+
 @layer base {
      :root {
         --background: 0 0% 100%;
@@ -55,6 +58,16 @@
         --chart-4: 280 65% 60%;
         --chart-5: 340 75% 55%;
     }
+}
+
+@font-face {
+    font-family: "Brando Sans TEST";
+    src: url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.eot");
+    src: url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.woff")format("woff"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.svg#Brando Sans TEST")format("svg");
+}
+
+.font-brando {
+    font-family: "Brando Sans TEST";
 }
 
 .PopoverContent {

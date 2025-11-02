@@ -12,7 +12,7 @@ export default function ThemePill() {
   return (
     <button
       onClick={toggle}
-      className="inline-flex h-8 items-center gap-1 rounded-full border border-[#0B1A3E]/15 dark:border-white/15 bg-white dark:bg-white/10 px-3 text-xs font-medium text-[#0B1A3E] dark:text-white/90"
+      className="inline-flex h-8 items-center gap-1 rounded-[8px] border border-[#E7E8EC] dark:border-white/15 bg-[#f4faff] dark:bg-white/10 px-3 text-xs font-medium text-[#0B1A3E] dark:text-white/90"
       title={isDark ? 'Light' : 'Dark'}
     >
       {isDark ? (

@@ -62,38 +62,38 @@ export default function ContactSection({ locale = 'en' }: { locale?: string }) {
           <h2 className="text-[34px] leading-[1.1] font-semibold text-[#0B1A3E] dark:text-white">
             {title1}<br/>{title2}
           </h2>
-          <p className="mt-6 text-[15px] leading-7 text-[#0B1A3E]/70 dark:text-white/70 max-w-[360px]">
+          <p className="mt-6 text-[15px] leading-7 text-[#0B1A3E] dark:text-white max-w-[376px] font-brando">
             {desc}
           </p>
         </div>
 
         <form onSubmit={onSubmit} className="space-y-5">
           <div>
-            <label className="mb-2 block text-[13px] font-medium text-[#0B1A3E] dark:text-white/80">
+            <label className="mb-2 block text-[14px] font-medium text-[#0B1A3E] dark:text-white/80">
               {labels.name}
             </label>
             <input
               type="text"
               required
               placeholder={placeholders.name}
-              className="w-full h-10 rounded-md border border-[#0B1A3E]/10 dark:border-white/10 bg-white dark:bg-transparent px-3 text-[14px] outline-none focus:ring-2 focus:ring-[#9CE818]/60"
+              className="w-full h-12 rounded-[12px] border border-[#0B1A3E]/10 dark:border-white/10 bg-white dark:bg-transparent px-3 text-[14px] outline-none focus:ring-2 focus:ring-[#9CE818]/60"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-[13px] font-medium text-[#0B1A3E] dark:text-white/80">
+            <label className="mb-2 block text-[14px] font-medium text-[#0B1A3E] dark:text-white/80">
               {labels.email}
             </label>
             <input
               type="email"
               required
               placeholder={placeholders.email}
-              className="w-full h-10 rounded-md border border-[#0B1A3E]/10 dark:border-white/10 bg-white dark:bg-transparent px-3 text-[14px] outline-none focus:ring-2 focus:ring-[#9CE818]/60"
+              className="w-full h-12 rounded-[12px] border border-[#0B1A3E]/10 dark:border-white/10 bg-white dark:bg-transparent px-3 text-[14px] outline-none focus:ring-2 focus:ring-[#9CE818]/60"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-[13px] font-medium text-[#0B1A3E] dark:text-white/80">
+            <label className="mb-2 block text-[14px] font-medium text-[#0B1A3E] dark:text-white/80">
               {labels.message}
             </label>
             <textarea
@@ -107,7 +107,7 @@ export default function ContactSection({ locale = 'en' }: { locale?: string }) {
           <button
             type="submit"
             disabled={loading}
-            className="inline-flex h-14 w-[189px] items-center justify-center rounded-md px-8 text-[14px] font-semibold text-[#0B1A3E] disabled:opacity-60"
+            className="inline-flex h-14 w-[189px] items-center justify-center rounded-[12px] px-8 text-[16px] font-semibold text-[#0B1A3E] disabled:opacity-60"
             style={{ backgroundColor: '#9CE818' }}
           >
             {loading ? cta.sending : cta.send}

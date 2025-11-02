@@ -39,7 +39,7 @@ export default function LangPill() {
 
   return (
     <Select value={currentLocale} onValueChange={handleChange}>
-      <SelectTrigger className="h-8 w-auto min-w-[70px] rounded-full border border-[#0B1A3E]/15 dark:border-white/15 bg-white dark:bg-white/10 px-3 text-xs text-[#0B1A3E] dark:text-white/90">
+      <SelectTrigger className="h-8 w-auto min-w-[70px] rounded-[8px] border border-[#E7E8EC] dark:border-white/15 bg-[#f4faff] dark:bg-white/10 px-3 text-xs text-[#0B1A3E] dark:text-white/90">
         <FiGlobe className="mr-1 h-4 w-4" />
         <SelectValue placeholder="Lang" />
       </SelectTrigger>

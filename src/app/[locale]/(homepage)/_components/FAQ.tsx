@@ -75,12 +75,12 @@ export default function FAQ({
       <div className="text-center mb-8">
         <h2 className="text-[48px] sm:text-[48px] font-semibold leading-tight text-[#0B1A3E] dark:text-white">
           {title}
-          <span className="block font-normal">{subtitle}</span>
+          <span className="block font-semibold">{subtitle}</span>
         </h2>
       </div>
 
       {/* List */}
-      <ul role="list" className="divide-y divide-[#0B1A3E]/10 dark:divide-white/10">
+      <ul role="list" className="divide-y divide-[#0B1A3E] dark:divide-white/10 mt-20">
         {items.map((item, i) => (
           <Row
             key={i}
@@ -113,7 +113,7 @@ function Row({
   const maxH = isOpen ? ref.current?.scrollHeight ?? 0 : 0;
 
   return (
-    <li className="py-3">
+    <li className="py-10">
       <button
         aria-controls={`faq-${index}`}
         aria-expanded={isOpen}
@@ -141,7 +141,7 @@ function Row({
         style={{ maxHeight: maxH }}
         className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
       >
-        <div className="pb-3 pt-1 text-[18px] leading-relaxed text-[#0B1A3E]/70 dark:text-white/70">{a}</div>
+        <div className="pb-3 pt-1 text-[20px] leading-relaxed text-[#0B1A3E] dark:text-white font-medium font-brando">{a}</div>
       </div>
     </li>
   );

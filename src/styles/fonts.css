@@ -1,0 +1,90 @@
+/* ================================
+   Brando Sans TEST — All Weights
+   ================================ */
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-Hairline-BF6423a3e48c108.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-HairlineItalic-BF6423a3e488f5e.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-ExtraLight-BF6423a3e4cc33b.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-ExtraLightItalic-BF6423a3e4c5bcf.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-Light-BF6423a3e4db3d8.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-LightItalic-BF6423a3e4b97a3.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-Regular-BF6423a3e4a27e1.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-Italic-BF6423a3e4e6bf6.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-SemiBold-BF6423a3e4c0066.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brando_Sans_TEST';
+    src: url('/fonts/Brando_Sans_TEST/BrandoSansTEST-BoldItalic-BF6423a3e4dcf7b.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* fallback stack */
+
+.font-brando {
+    font-family: 'Brando_Sans_TEST', var(--app-font), system-ui, sans-serif;
+}
