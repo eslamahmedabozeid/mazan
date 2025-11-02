@@ -1,7 +1,51 @@
 // Footer.tsx
 'use client';
 
-export default function Footer() {
+import { useEffect, useState } from 'react';
+import initTranslations from '@/app/i18n';
+
+export default function Footer({ locale = 'en' }: { locale?: string }) {
+  const [{ t, summary, aria, alt }, setI18n] = useState(() => ({
+    t: (k: string) => k,
+    summary: '',
+    aria: {
+      linkedin: 'LinkedIn',
+      x: 'X',
+      instagram: 'Instagram',
+    },
+    alt: {
+      logo: 'Mizan logo',
+      sama: 'Saudi Central Bank',
+      cma: 'Capital Market Authority',
+    },
+  }));
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      const i18n = await initTranslations(locale, ['homepage']);
+      if (!mounted) return;
+
+      setI18n({
+        t: i18n.t,
+        summary: i18n.t('homepage.footer.summary'),
+        aria: {
+          linkedin: i18n.t('homepage.footer.aria.linkedin'),
+          x: i18n.t('homepage.footer.aria.x'),
+          instagram: i18n.t('homepage.footer.aria.instagram'),
+        },
+        alt: {
+          logo: i18n.t('homepage.footer.alt.logo'),
+          sama: i18n.t('homepage.footer.alt.sama'),
+          cma: i18n.t('homepage.footer.alt.cma'),
+        },
+      });
+    })();
+    return () => {
+      mounted = false;
+    };
+  }, [locale]);
+
   return (
     <footer className="bg-[#F4F9FF] dark:bg-[#102047]">
       <div className="w-[92%] max-w-[1200px] mx-auto py-12">
@@ -12,12 +56,12 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <img
                 src="/asset/footer.png"
-                alt="Mizan logo"
+                alt={alt.logo}
                 className="h-auto w-[112px] rounded dark:hidden"
               />
-               <img
+              <img
                 src="/asset/Framedark1.png"
-                alt="Mizan logo"
+                alt={alt.logo}
                 className="h-auto w-[112px] rounded hidden dark:block"
               />
               {/* <span className="text-[#0B1A3E] dark:text-white text-[18px] font-semibold tracking-wide">
@@ -26,29 +70,28 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 text-[14px] leading-6 text-[#0B1A3E]/70 dark:text-white/70">
-              Mizan helps you understand, manage, and grow your
-              finances with clarity and confidence.
+              {summary}
             </p>
 
             <div className="mt-5 flex items-center gap-3">
               <a
                 href="#"
-                aria-label="LinkedIn"
+                aria-label={aria.linkedin}
                 className="inline-flex h-8 w-8 items-center justify-center rounded bg-[#0B1A3E] dark:bg-white/10 text-white dark:text-white/90"
               >
                 <LinkedInIcon />
               </a>
               <a
                 href="#"
-                aria-label="X"
+                aria-label={aria.x}
                 className="inline-flex h-8 w-8 items-center justify-center rounded bg-[#0B1A3E] dark:bg-white/10 text-white dark:text-white/90"
               >
                 <XIcon />
               </a>
               <a
                 href="#"
-                aria-label="Instagram"
-                className="inline-flex h-8 w-8 items-center justify-center rounded bg-[#0B1A3E] dark:bg.white/10 text-white dark:text-white/90"
+                aria-label={aria.instagram}
+                className="inline-flex h-8 w-8 items-center justify-center rounded bg-[#0B1A3E] dark:bg-white/10 text-white dark:text-white/90"
               >
                 <InstagramIcon />
               </a>
@@ -56,28 +99,28 @@ export default function Footer() {
           </div>
 
           {/* right: approvals/logos */}
-          <div className="flex items-center gap-10 md:gap-16 dark:hidden">
+          <div className="flex items-center gap-10 md:gap-16 dark:hidden max-sm:flex-col">
             <img
               src="/asset/Sudialogo2.png"
-              alt="Saudi Central Bank"
+              alt={alt.sama}
               className=" w-auto opacity-80"
             />
             <img
               src="/asset/Sudialogo1.png"
-              alt="Capital Market Authority"
+              alt={alt.cma}
               className=" w-auto opacity-80"
             />
           </div>
 
-           <div className="items-center gap-10 md:gap-16 hidden dark:flex">
+          <div className="items-center gap-10 md:gap-16 hidden dark:flex">
             <img
               src="/asset/dark1.png"
-              alt="Saudi Central Bank"
+              alt={alt.sama}
               className=" w-auto opacity-80"
             />
             <img
               src="/asset/dark2.png"
-              alt="Capital Market Authority"
+              alt={alt.cma}
               className=" w-auto opacity-80"
             />
           </div>

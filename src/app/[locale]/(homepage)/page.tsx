@@ -14,12 +14,12 @@ import Features from "./_components/Features";
 function page({ params: { locale } }: { params: { locale: string } }) {
   return (
     <div className="flex flex-col">
-      <HeaderBar />
+      <HeaderBar locale={locale}/>
 
-      <Hero />
-      <Client />
-      <Features />
-      <Footer />
+      <Hero locale={locale}/>
+      <Client locale={locale}/>
+      <Features locale={locale}/>
+      <Footer locale={locale}/>
       {/* <div className="flex justify-between ">
         <LanguageChanger />
         <ThemeChanger />

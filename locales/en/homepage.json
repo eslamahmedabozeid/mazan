@@ -1,4 +1,119 @@
 {
-  "server_component": { "title": "This is a server Component " },
-  "client_component": { "title": "This is a client Component " }
+    "server_component": { "title": "This is a server Component " },
+    "client_component": { "title": "This is a client Component " },
+    "homepage": {
+        "nav": {
+            "features": "Features",
+            "contact": "Contact Us",
+            "faq": "FAQ"
+        },
+        "alt": {
+            "logo": "MIZAN",
+            "play": "Google Play",
+            "appStore": "App Store"
+        },
+        "aria": {
+            "googlePlay": "Open Google Play",
+            "appStore": "Open App Store"
+        },
+        "hero": {
+            "title": "Your trusted financial partner.",
+            "subtitle": "Plan, track, and grow your finances with confidence.",
+            "placeholder": "Enter your phone & Join the waitlist",
+            "button": "Join",
+            "footerText": "Join the waitlist and download the app to get started.",
+            "mockAlt": "App preview mockup",
+            "downloadApple": "Download on the App Store",
+            "downloadGoogle": "Get it on Google Play"
+        },
+        "client": {
+            "authorizedBy": "Authorized by",
+            "logo1Alt": "Authority logo 1",
+            "logo2Alt": "Authority logo 2"
+        },
+        "features": {
+            "badge": "Features",
+            "title": "Smart tools designed to simplify your financial life.",
+            "block1": {
+                "heading": "Direct Investing",
+                "text": "Start new investments directly from the app, whether in stocks, mutual funds, or others.",
+                "imageAlt": "Direct investing illustration"
+            },
+            "block2": {
+                "heading": "Effortlessly track your finances",
+                "text": "Track your net worth and assets in real time with intuitive charts and clear breakdowns that keep you informed.",
+                "imageAlt": "Finance tracking illustration"
+            },
+            "block3": {
+                "heading": "Simplified Budget Management",
+                "text": "Easily set and monitor your budgets for different categories. Get helpful reminders and insights to stay on track.",
+                "imageAlt": "Budget management illustration"
+            },
+            "security": {
+                "badge": "Security",
+                "heading": "Your bank accounts and investments are always secure.",
+                "text": "Mizan uses advanced encryption and trusted connections to keep your accounts and investments safe — always."
+            }
+        },
+        "faq": {
+            "title": "Questions",
+            "subtitle": "—answers",
+            "q1": {
+                "q": "What is Mizan?",
+                "a": "Mizan is a modern finance platform that simplifies accounting and reporting."
+            },
+            "q2": {
+                "q": "How does Mizan help me?",
+                "a": "It helps you track expenses, invoices, and taxes in one place."
+            },
+            "q3": {
+                "q": "Is it multilingual?",
+                "a": "It supports multiple languages and works great on both mobile and desktop."
+            },
+            "q4": {
+                "q": "Can I integrate payment systems?",
+                "a": "You can integrate with popular payment gateways and ERP systems."
+            },
+            "q5": {
+                "q": "Is it secure?",
+                "a": "Security and privacy are built-in with role-based access control."
+            },
+            "q6": {
+                "q": "Do I get real-time data?",
+                "a": "Yes, you get real-time dashboards and clear financial insights."
+            }
+        },
+        "contact": {
+            "titleLine1": "We’re here to",
+            "titleLine2": "help.",
+            "desc": "We’re happy to answer questions about features, security, or partnerships.",
+            "labels": {
+                "name": "Your name",
+                "email": "Email",
+                "message": "Message"
+            },
+            "placeholders": {
+                "name": "Enter your full name",
+                "email": "Enter your email",
+                "message": "What's on your mind"
+            },
+            "cta": {
+                "send": "Send",
+                "sending": "Sending…"
+            }
+        },
+        "footer": {
+            "summary": "Mizan helps you understand, manage, and grow your finances with clarity and confidence.",
+            "aria": {
+                "linkedin": "LinkedIn",
+                "x": "X",
+                "instagram": "Instagram"
+            },
+            "alt": {
+                "logo": "Mizan logo",
+                "sama": "Saudi Central Bank",
+                "cma": "Capital Market Authority"
+            }
+        }
+    }
 }

@@ -1,32 +1,79 @@
-// FAQ.tsx
 'use client';
+
 import { useState, useRef } from 'react';
+import { useEffect, useState as useClientState } from 'react';
+import initTranslations from '@/app/i18n';
 
 type Item = { q: string; a: string };
 
 export default function FAQ({
-  items = [
-    { q: 'What is Mizan?', a: 'Mizan is a modern finance platform that simplifies accounting and reporting.' },
-    { q: 'What is Mizan?', a: 'It helps you track expenses, invoices, and taxes in one place.' },
-    { q: 'What is Mizan?', a: 'It supports multi-language and works great on mobile and desktop.' },
-    { q: 'What is Mizan?', a: 'You can integrate with popular payment gateways and ERPs.' },
-    { q: 'What is Mizan?', a: 'Security and privacy are built-in with role-based access.' },
-    { q: 'What is Mizan?', a: 'Get real-time dashboards and clear financial insights.' },
-  ],
-  title = 'Questions',
-  subtitle = '—answers',
+  locale = 'en',
 }: {
-  items?: Item[];
-  title?: string;
-  subtitle?: string;
+  locale?: string;
 }) {
   const [open, setOpen] = useState<number | null>(null);
+  const [{ t, items, title, subtitle }, setI18n] = useClientState<{
+    t: (key: string) => string;
+    items: Item[];
+    title: string;
+    subtitle: string;
+  }>({
+    t: (k) => k,
+    items: [],
+    title: '',
+    subtitle: '',
+  });
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      const i18n = await initTranslations(locale, ['homepage']);
+      if (!mounted) return;
+
+      const translatedItems: Item[] = [
+        {
+          q: i18n.t('homepage.faq.q1.q'),
+          a: i18n.t('homepage.faq.q1.a'),
+        },
+        {
+          q: i18n.t('homepage.faq.q2.q'),
+          a: i18n.t('homepage.faq.q2.a'),
+        },
+        {
+          q: i18n.t('homepage.faq.q3.q'),
+          a: i18n.t('homepage.faq.q3.a'),
+        },
+        {
+          q: i18n.t('homepage.faq.q4.q'),
+          a: i18n.t('homepage.faq.q4.a'),
+        },
+        {
+          q: i18n.t('homepage.faq.q5.q'),
+          a: i18n.t('homepage.faq.q5.a'),
+        },
+        {
+          q: i18n.t('homepage.faq.q6.q'),
+          a: i18n.t('homepage.faq.q6.a'),
+        },
+      ];
+
+      setI18n({
+        t: i18n.t,
+        items: translatedItems,
+        title: i18n.t('homepage.faq.title'),
+        subtitle: i18n.t('homepage.faq.subtitle'),
+      });
+    })();
+    return () => {
+      mounted = false;
+    };
+  }, [locale]);
 
   return (
     <div className="mx-auto w-[92%] max-w-[980px] rounded-[28px] bg-[#F4F9FF] dark:bg-[#102047] px-6 sm:px-10 py-10 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
       {/* Heading */}
       <div className="text-center mb-8">
-        <h2 className="text-[48px] sm:text-[48px] font-semibold leading-tight text-[#fff] dark:text-white">
+        <h2 className="text-[48px] sm:text-[48px] font-semibold leading-tight text-[#0B1A3E] dark:text-white">
           {title}
           <span className="block font-normal">{subtitle}</span>
         </h2>
@@ -63,7 +110,7 @@ function Row({
   a: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const maxH = isOpen ? (ref.current?.scrollHeight ?? 0) : 0;
+  const maxH = isOpen ? ref.current?.scrollHeight ?? 0 : 0;
 
   return (
     <li className="py-3">
@@ -71,11 +118,9 @@ function Row({
         aria-controls={`faq-${index}`}
         aria-expanded={isOpen}
         onClick={onToggle}
-        className="group flex w-full items-center justify-between gap-6 py-2 focus:outline-none"
+        className="group flex w-full items-center justify-between gap-6 py-2 focus:outline-none dir_ltr"
       >
-        <span className="text-[15px] sm:text-[20px] text-[#0B1A3E] dark:text-white/90">
-          {q}
-        </span>
+        <span className="text-[24px] sm:text-[24px] text-[#0B1A3E] dark:text-white/90 font-semibold">{q}</span>
 
         {/* plus icon */}
         <span
@@ -96,9 +141,7 @@ function Row({
         style={{ maxHeight: maxH }}
         className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
       >
-        <div className="pb-3 pt-1 text-[14px] leading-relaxed text-[#0B1A3E]/70 dark:text-white/70">
-          {a}
-        </div>
+        <div className="pb-3 pt-1 text-[18px] leading-relaxed text-[#0B1A3E]/70 dark:text-white/70">{a}</div>
       </div>
     </li>
   );
