@@ -70,7 +70,7 @@ export default async function Features({ locale }: { locale: string }) {
       </div>
 
       <section className="relative overflow-hidden min-h-[792px] image_groub mt-[123px] py-20 md:py-28 dark:hidden max-sm:p-5">
-        <div className="mx-auto max-w-[1660px] xl:max-w-[1470px]   ">
+        <div className="mx-auto max-w-[1660px] xl:max-w-[1470px]  xl:scale-x-[92%] ">
           <div className="grid grid-cols-1 md:grid-cols-12 items-center max-sm:p-6">
             {/* النص */}
             <div className="md:col-span-6 lg:col-span-5">
@@ -118,7 +118,7 @@ export default async function Features({ locale }: { locale: string }) {
 
       {/* dark:block */}
       <section className="relative overflow-hidden min-h-[792px] image_groub_dark mt-[123px] py-20 md:py-28 dark:block hidden max-sm:p-5">
-        <div className="mx-auto max-w-[1660px] xl:max-w-[1470px]   ">
+        <div className="mx-auto max-w-[1660px] xl:max-w-[1470px]  xl:scale-x-[92%] ">
           <div className="grid grid-cols-1 md:grid-cols-12 items-center">
             {/* النص */}
             <div className="md:col-span-6 lg:col-span-5">
