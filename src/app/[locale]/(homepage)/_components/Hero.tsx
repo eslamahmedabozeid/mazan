@@ -11,7 +11,7 @@ export default async function Hero({ locale }: { locale: string }) {
 
         <div className="w-full text-center items-center gap-5">
           <div className="self-stretch flex flex-col justify-start items-start gap-5">
-            <div className="w-full text-center justify-start text-text-default-heading text-5xl font-semibold leading-[56px]">
+            <div className="w-full text-center justify-start text-text-default-heading text-5xl font-semibold leading-[56px] max-sm:text-[40px]">
               {t("homepage.hero.title")}
             </div>
             <div className="self-stretch text-center justify-start text-text-default-heading font-brando text-xl leading-8">
@@ -19,7 +19,7 @@ export default async function Hero({ locale }: { locale: string }) {
             </div>
           </div>
 
-          <form className="mx-auto h-[54px] mt-6 flex max-w-[28rem] items-center gap-2 rounded-[12px] bg-[#ffffff80] dark:bg-[#102047] p-1 shadow"
+          <form className="mx-auto h-[54px] mt-6 flex max-w-[28rem] items-center gap-2 rounded-[12px] bg-[#ffffff80] dark:bg-[#102047] p-1 shadow max-sm:mx-6"
           dir="ltr">
             <input
               type="tel"
