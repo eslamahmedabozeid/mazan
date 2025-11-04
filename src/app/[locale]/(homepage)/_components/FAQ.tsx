@@ -156,7 +156,7 @@ function Row({
         onClick={onToggle}
         className="group flex w-full items-center justify-between gap-6 py-2 focus:outline-none dir_ltr"
       >
-        <span className="text-[24px] sm:text-[24px] text-[#0B1A3E] dark:text-white/90 font-semibold">{q}</span>
+        <span className="lg:text-[24px] max-sm:text-[20px] text-[#0B1A3E] dark:text-white/90 font-semibold">{q}</span>
 
         {/* plus icon */}
         <span

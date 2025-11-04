@@ -20,7 +20,7 @@ export default async function Features({ locale }: { locale: string }) {
       </div>
 
       <div className="flex w-full justify-center">
-        <h1 className="self-stretch text-center justify-start  text-[32px] font-semibold leading-10 mt-6 lg:w-[31%]">
+        <h1 className="self-stretch text-center justify-start  lg:text-[32px] max-sm:text-[29px] font-semibold leading-10 mt-6 lg:w-[31%]">
           {t("homepage.features.title")}
         </h1>
       </div>

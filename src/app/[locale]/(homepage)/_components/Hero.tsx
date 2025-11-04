@@ -11,7 +11,7 @@ export default async function Hero({ locale }: { locale: string }) {
         <div className=" bg-sky-200/50" />
         <div className="w-full text-center items-center gap-5">
           <div className="self-stretch flex flex-col justify-start items-start gap-5">
-            <div className="w-full text-center justify-start text-text-default-heading text-5xl font-semibold font-['Montserrat'] leading-[56px]">
+            <div className="w-full text-center justify-start text-text-default-heading text-5xl font-semibold  leading-[56px] max-sm:text-4xl">
               {t('You can take control of your financial future')}
             </div>
             <div className="self-stretch text-center justify-start text-text-default-heading text-xl font-medium font-['Brando_Sans_TEST'] leading-8">
@@ -19,7 +19,7 @@ export default async function Hero({ locale }: { locale: string }) {
             </div>
           </div>
 
-          <form className="mx-auto mt-6 flex max-w-xl items-center gap-2 rounded-xl bg-white/70 dark:bg-[#102047] p-1 shadow" dir="ltr">
+          <form className="mx-auto mt-6 flex max-w-xl items-center gap-2 rounded-xl bg-white/70 dark:bg-[#102047] p-1 shadow max-sm:w-[85%]" dir="ltr">
             <input
               type="tel"
               className="h-12 flex-1 rounded-lg px-4 outline-none placeholder:text-slate-400 dark:bg-transparent"
@@ -42,7 +42,7 @@ export default async function Hero({ locale }: { locale: string }) {
         </div>  
 
 
-        <div className="self-stretch text-center text-text-default-heading text-xl font-semibold font-['Montserrat'] leading-6 w-full lg:flex lg:justify-center">
+        <div className="self-stretch text-center text-text-default-heading text-xl font-semibold  leading-6 w-full lg:flex lg:justify-center">
              <p className="lg:w-[40%]">{t('Download the app now and start investing and managing your money smarter, faster and better - at your fingertips')}</p> 
             </div>
 

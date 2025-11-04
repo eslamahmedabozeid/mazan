@@ -60,7 +60,7 @@
     }
 }
 
-@font-face {
+/* @font-face {
     font-family: "Brando Sans TEST";
     src: url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.eot");
     src: url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.woff")format("woff"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.svg#Brando Sans TEST")format("svg");
@@ -68,7 +68,19 @@
 
 .font-brando {
     font-family: "Brando Sans TEST";
+} */
+@font-face {
+  font-family: "Brando Sans TEST";
+  src: url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.eot");
+  src:
+    url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.svg#Brando Sans TEST") format("svg");
 }
+
+.font-brando { font-family: "Zain"; }
 
 .PopoverContent {
     width: var(--radix-popover-trigger-width);
@@ -78,7 +90,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+body{
+    font-family: "Zain";
+}
 @layer base {
     * {
         @apply border-border;
