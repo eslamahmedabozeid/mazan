@@ -14,7 +14,7 @@ export default async function Hero({ locale }: { locale: string }) {
             <div className="w-full text-center justify-start text-text-default-heading text-5xl font-semibold  leading-[56px] max-sm:text-4xl">
               {t('You can take control of your financial future')}
             </div>
-            <div className="self-stretch text-center justify-start text-text-default-heading text-xl font-medium font-['Brando_Sans_TEST'] leading-8">
+            <div className="self-stretch text-center justify-start text-text-default-heading lg:text-xl max-sm:text-base font-medium font-['Brando_Sans_TEST'] leading-8">
               {t('We help you understand your financial health with detailed insights and easy-to-use tools')}
             </div>
           </div>
