@@ -74,21 +74,24 @@ export default function Footer({ locale = "en" }: { locale?: string }) {
 
             <div className="mt-5 flex items-center gap-3 dark:hidden">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/mizan-app"
+                target="_blank"
                 aria-label={aria.linkedin}
                 className="inline-flex items-center"
               >
                 <img src="/asset/link.svg" />
               </a>
               <a
-                href="#"
+                href="https://x.com/mizan_app?s=21&t=YfAECVDUj5yuCgltmcwbwg"
+                target="_blank"
                 aria-label={aria.x}
                 className="inline-flex items-center"
               >
                 <img src="/asset/x.svg" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/mizan.app?igsh=cGtwYnc0NXU1N2cy&utm_source=qr"
+                target="_blank"
                 aria-label={aria.instagram}
                 className="inline-flex items-center"
               >
@@ -98,21 +101,24 @@ export default function Footer({ locale = "en" }: { locale?: string }) {
 
             <div className="mt-5 dark:flex items-center gap-3 hidden">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/mizan-app"
+                target="_blank"
                 aria-label={aria.linkedin}
                 className="inline-flex items-center"
               >
                 <img src="/asset/link_dark.svg" />
               </a>
               <a
-                href="#"
+               href="https://x.com/mizan_app?s=21&t=YfAECVDUj5yuCgltmcwbwg"
+                target="_blank"
                 aria-label={aria.x}
                 className="inline-flex items-center"
               >
                 <img src="/asset/x_dark.svg" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/mizan.app?igsh=cGtwYnc0NXU1N2cy&utm_source=qr"
+                target="_blank"
                 aria-label={aria.instagram}
                 className="inline-flex items-center"
               >

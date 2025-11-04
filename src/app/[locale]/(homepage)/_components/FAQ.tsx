@@ -55,6 +55,42 @@ export default function FAQ({
           q: i18n.t('homepage.faq.q6.q'),
           a: i18n.t('homepage.faq.q6.a'),
         },
+          {
+          q: i18n.t('homepage.faq.q7.q'),
+          a: i18n.t('homepage.faq.q7.a'),
+        },
+         {
+          q: i18n.t('homepage.faq.q8.q'),
+          a: i18n.t('homepage.faq.q8.a'),
+        },
+         {
+          q: i18n.t('homepage.faq.q9.q'),
+          a: i18n.t('homepage.faq.q9.a'),
+        },
+         {
+          q: i18n.t('homepage.faq.q10.q'),
+          a: i18n.t('homepage.faq.q10.a'),
+        },
+        {
+          q: i18n.t('homepage.faq.q11.q'),
+          a: i18n.t('homepage.faq.q11.a'),
+        },
+         {
+          q: i18n.t('homepage.faq.q12.q'),
+          a: i18n.t('homepage.faq.q12.a'),
+        },
+         {
+          q: i18n.t('homepage.faq.q13.q'),
+          a: i18n.t('homepage.faq.q13.a'),
+        },
+         {
+          q: i18n.t('homepage.faq.q14.q'),
+          a: i18n.t('homepage.faq.q14.a'),
+        },
+         {
+          q: i18n.t('homepage.faq.q15.q'),
+          a: i18n.t('homepage.faq.q15.a'),
+        },
       ];
 
       setI18n({

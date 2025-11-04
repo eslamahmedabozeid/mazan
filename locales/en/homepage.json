@@ -41,7 +41,7 @@
             },
             "block2": {
                 "heading": "Effortlessly track your finances",
-                "text": "Track your net worth and assets in real time with intuitive charts and clear breakdowns that keep you informed.",
+                "text": "Stay in control with real-time updates on your net worth, assets, and liabilities. Visualize your financial progress with intuitive charts and detailed breakdowns",
                 "imageAlt": "Finance tracking illustration"
             },
             "block3": {
@@ -51,7 +51,7 @@
             },
             "security": {
                 "badge": "Security",
-                "heading": "Your bank accounts and investments are always secure.",
+                "heading": "Your bank accounts and investments are safe",
                 "text": "Mizan uses advanced encryption and trusted connections to keep your accounts and investments safe — always."
             }
         },
@@ -60,27 +60,63 @@
             "subtitle": "—answers",
             "q1": {
                 "q": "What is Mizan?",
-                "a": "Mizan is a modern finance platform that simplifies accounting and reporting."
+                "a": "Mizan is a personal finance management app that helps you understand your financial health through detailed insights and easy-to-use tools."
             },
             "q2": {
-                "q": "How does Mizan help me?",
-                "a": "It helps you track expenses, invoices, and taxes in one place."
+                "q": "How do I start using Mizan?",
+                "a": "You can start using Mizan by downloading the app from the App Store or Google Play."
             },
             "q3": {
-                "q": "Is it multilingual?",
-                "a": "It supports multiple languages and works great on both mobile and desktop."
+                "q": "Can Mizan be used for free?",
+                "a": "Yes, Mizan can be used for free. However, there may be premium features available for purchase."
             },
             "q4": {
-                "q": "Can I integrate payment systems?",
-                "a": "You can integrate with popular payment gateways and ERP systems."
+                "q": "Is Mizan secure and reliable?",
+                "a": "Yes, Mizan takes the security and privacy of your financial data seriously. We use industry-standard encryption and security measures to protect your information."
             },
             "q5": {
-                "q": "Is it secure?",
-                "a": "Security and privacy are built-in with role-based access control."
+                "q": "Can I track my investments with Mizan?",
+                "a": "Yes, you can track the performance of your investments, such as stocks, funds, and real estate, using Mizan."
             },
             "q6": {
-                "q": "Do I get real-time data?",
-                "a": "Yes, you get real-time dashboards and clear financial insights."
+                "q": "What is the purpose of the app's Net Worth feature?",
+                "a": "Our Net Worth feature helps you track your overall financial health by calculating the total value of your assets minus your liabilities, giving you a clear picture of your financial standing."
+            },
+             "q7": {
+                "q": "Can I link multiple bank accounts?",
+                "a": "Yes, you can link multiple bank accounts from different institutions to get a comprehensive view of your finances in one place."
+            },
+             "q8": {
+                "q": "How is my data secured?",
+                "a": "We use bank-level encryption and security measures to protect your data. Your sensitive information is encrypted and we never store your banking credentials."
+            },
+             "q9": {
+                "q": "How do I update my personal details?",
+                "a": "You can update your personal details in the Settings section of your profile. Simply navigate to your profile and click on the Edit button."
+            },
+            "q10": {
+                "q": "What is two-factor authentication (2FA)?",
+                "a": "Two-factor authentication adds an extra layer of security to your account. You can enable it in your security settings."
+            },
+            "q11": {
+                "q": "Can I set financial goals in the app?",
+                "a": "Yes, you can set and track various financial goals like savings targets, debt repayment, or investment objectives through our goal-setting feature."
+            },
+            "q12": {
+                "q": "Will the app give me recommendations to save more?",
+                "a": "Yes, our app provides personalized recommendations based on your spending patterns and financial habits to help you save more effectively."
+            },
+             "q13": {
+                "q": "How do I manage my subscriptions?",
+                "a": "You can view and manage all your subscriptions in the Subscriptions section. Here you can track recurring payments and cancel or modify subscriptions."
+            },
+             "q14": {
+                "q": "Can I set reminders for subscription renewals?",
+                "a": "Yes, you can set up notifications for upcoming subscription renewals to help you stay on top of your recurring payments."
+            },
+            "q15": {
+                "q": "How do I contact support if I encounter an issue?",
+                "a": "You can reach our support team through the Help Center in the app, or by emailing support@example.com. We typically respond within 24 hours."
             }
         },
         "contact": {
@@ -103,7 +139,7 @@
             }
         },
         "footer": {
-            "summary": "Mizan helps you understand, manage, and grow your finances with clarity and confidence.",
+            "summary": "In the Mizan app, you can take control of your financial future. It helps you understand your financial health through detailed insights and easy-to-use tools",
             "aria": {
                 "linkedin": "LinkedIn",
                 "x": "X",
