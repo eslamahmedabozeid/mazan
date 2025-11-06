@@ -52,5 +52,6 @@ export default async function Hero({ locale }: { locale: string }) {
             </div>
       </div>
     </div>
+    
   );
 }
