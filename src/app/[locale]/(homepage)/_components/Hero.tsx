@@ -42,8 +42,8 @@ export default async function Hero({ locale }: { locale: string }) {
         </div>  
 
 
-        <div className="self-stretch text-center text-text-default-heading text-xl font-semibold  leading-6 w-full lg:flex lg:justify-center">
-             <p className="lg:w-[40%]">{t('Download the app now and start investing and managing your money smarter, faster and better - at your fingertips')}</p> 
+        <div className="self-stretch text-center text-text-default-heading text-xl font-semibold  leading-6 w-full flex justify-center">
+             <p className="lg:w-[40%] max-sm:w-[90%]">{t('Download the app now and start investing and managing your money smarter, faster and better - at your fingertips')}</p> 
             </div>
 
             <div className="flex justify-center mt-[32px]">
