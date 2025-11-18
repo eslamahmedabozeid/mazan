@@ -111,7 +111,7 @@ export default function FAQ({
       <div className="text-center mb-8">
         <h2 className="text-[48px] sm:text-[48px] font-semibold leading-tight text-[#0B1A3E] dark:text-white">
           {title}
-          <span className="block font-semibold">{subtitle}</span>
+          {/* <span className="block font-semibold">{subtitle}</span> */}
         </h2>
       </div>
 
