@@ -4,6 +4,21 @@ import type { Metadata } from "next";
 import GlobalProvider from "../../Providers";
 import "../../styles/globals.css";
 
+// 👇 استخدم الخطوط المطلوبة عبر next/font
+import { Montserrat, Tajawal } from "next/font/google";
+
+const montserrat = Montserrat({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const tajawal = Tajawal({
+  weight: ["200", "300", "400", "500", "700", "800", "900"],
+  subsets: ["arabic"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Mizan",
   description: "Site Description",
@@ -14,24 +29,23 @@ export function generateStaticParams() {
   return i18nRouterConfig.locales.map((locale) => ({ locale }));
 }
 
-export default function RootLayout({
+function getFont(locale: string) {
+  // عربي => Tajawal ، غير ذلك => Montserrat
+  return locale.startsWith("ar") ? tajawal : montserrat;
+}
+
+export default async function RootLayout({
   children,
   params: { locale },
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  const font = getFont(locale);
+
   return (
     <html lang={locale} dir={dir(locale)}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+      <body className={font.className}>
         <GlobalProvider locale={locale}>{children}</GlobalProvider>
       </body>
     </html>
