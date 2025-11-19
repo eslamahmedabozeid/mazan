@@ -72,7 +72,77 @@ export default function Footer({ locale = "en" }: { locale?: string }) {
               {summary}
             </p>
 
-            <div className="mt-5 flex items-center gap-3 dark:hidden">
+            {/* <div className="mt-5 flex items-center gap-3 dark:hidden">
+              <a
+                href="https://www.linkedin.com/company/mizan-app"
+                target="_blank"
+                aria-label={aria.linkedin}
+                className="inline-flex items-center"
+              >
+                <img src="/asset/link.svg" />
+              </a>
+              <a
+                href="https://x.com/mizan_app?s=21&t=YfAECVDUj5yuCgltmcwbwg"
+                target="_blank"
+                aria-label={aria.x}
+                className="inline-flex items-center"
+              >
+                <img src="/asset/x.svg" />
+              </a>
+              <a
+                href="https://www.instagram.com/mizan.app?igsh=cGtwYnc0NXU1N2cy&utm_source=qr"
+                target="_blank"
+                aria-label={aria.instagram}
+                className="inline-flex items-center"
+              >
+                <img src="/asset/inst.svg" />
+              </a>
+            </div> */}
+
+            {/* <div className="mt-5 dark:flex items-center gap-3 hidden">
+              <a
+                href="https://www.linkedin.com/company/mizan-app"
+                target="_blank"
+                aria-label={aria.linkedin}
+                className="inline-flex items-center"
+              >
+                <img src="/asset/link_dark.svg" />
+              </a>
+              <a
+               href="https://x.com/mizan_app?s=21&t=YfAECVDUj5yuCgltmcwbwg"
+                target="_blank"
+                aria-label={aria.x}
+                className="inline-flex items-center"
+              >
+                <img src="/asset/x_dark.svg" />
+              </a>
+              <a
+                href="https://www.instagram.com/mizan.app?igsh=cGtwYnc0NXU1N2cy&utm_source=qr"
+                target="_blank"
+                aria-label={aria.instagram}
+                className="inline-flex items-center"
+              >
+                <img src="/asset/inst_dark.svg" />
+              </a>
+            </div> */}
+          </div>
+
+          {/* right: approvals/logos */}
+          <div className="flex  gap-10 md:gap-16 dark:hidden max-sm:flex-col">
+            {/* <img
+              src="/asset/Sudialogo2.svg"
+              alt={alt.sama}
+              className=" w-auto opacity-80"
+            />
+            <img
+              src="/asset/Sudialogo1.svg"
+              alt={alt.cma}
+              className=" w-auto opacity-80"
+            /> */}
+
+             
+
+              <div className="mt-5 flex items-center gap-3 dark:hidden">
               <a
                 href="https://www.linkedin.com/company/mizan-app"
                 target="_blank"
@@ -98,7 +168,19 @@ export default function Footer({ locale = "en" }: { locale?: string }) {
                 <img src="/asset/inst.svg" />
               </a>
             </div>
+          </div>
 
+          <div className="items-center gap-10 md:gap-16 hidden dark:flex">
+            {/* <img
+              src="/asset/dark11.svg"
+              alt={alt.sama}
+              className=" w-auto opacity-80"
+            />
+            <img
+              src="/asset/dark12.svg"
+              alt={alt.cma}
+              className=" w-auto opacity-80"
+            /> */}
             <div className="mt-5 dark:flex items-center gap-3 hidden">
               <a
                 href="https://www.linkedin.com/company/mizan-app"
@@ -125,33 +207,7 @@ export default function Footer({ locale = "en" }: { locale?: string }) {
                 <img src="/asset/inst_dark.svg" />
               </a>
             </div>
-          </div>
 
-          {/* right: approvals/logos */}
-          <div className="flex  gap-10 md:gap-16 dark:hidden max-sm:flex-col">
-            <img
-              src="/asset/Sudialogo2.svg"
-              alt={alt.sama}
-              className=" w-auto opacity-80"
-            />
-            <img
-              src="/asset/Sudialogo1.svg"
-              alt={alt.cma}
-              className=" w-auto opacity-80"
-            />
-          </div>
-
-          <div className="items-center gap-10 md:gap-16 hidden dark:flex">
-            <img
-              src="/asset/dark11.svg"
-              alt={alt.sama}
-              className=" w-auto opacity-80"
-            />
-            <img
-              src="/asset/dark12.svg"
-              alt={alt.cma}
-              className=" w-auto opacity-80"
-            />
           </div>
         </div>
       </div>
