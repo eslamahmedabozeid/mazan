@@ -69,6 +69,10 @@
 .font-brando {
     font-family: "Brando Sans TEST";
 }
+body{
+    font-family: "Brando Sans TEST" !important;
+
+}
 /* @font-face {
   font-family: "Brando Sans TEST";
   src: url("https://db.onlinewebfonts.com/t/19444b72f540014d4a8da7328a5a7f10.eot");
