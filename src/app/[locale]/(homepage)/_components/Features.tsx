@@ -50,7 +50,7 @@ export default async function Features({ locale }: { locale: string }) {
             <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-semibold">
               {t("homepage.features.block2.heading")}
             </h2>
-            <p className="text-[#5C667E] text-lg font-medium text-center pt-3 font-brando">
+            <p className="text-[#5C667E] dark:text-[#fff] text-lg font-medium text-center pt-3 font-brando">
               {t("homepage.features.block2.text")}
             </p>
           </div>
@@ -64,7 +64,7 @@ export default async function Features({ locale }: { locale: string }) {
             <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-semibold">
               {t("homepage.features.block3.heading")}
             </h2>
-            <p className="text-[#5C667E] text-lg font-medium text-center w-[100%] pt-3 font-brando">
+            <p className="text-[#5C667E] dark:text-[#fff] text-lg font-medium text-center w-[100%] pt-3 font-brando">
               {t("homepage.features.block3.text")}
             </p>
           </div>
