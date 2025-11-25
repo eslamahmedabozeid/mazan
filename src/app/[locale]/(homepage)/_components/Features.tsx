@@ -28,7 +28,7 @@ export default async function Features({ locale }: { locale: string }) {
       <div className="mt-[64px] max-w-[1600px] mx-auto overflow-hidden xl:scale-[100%] lg:w-[80%] md:w-[90%] max-sm:w-[96%]">
         <div className="rounded-[32px] bg-[#F4F9FF] dark:bg-[#102047] flex justify-center items-center p-14 max-sm:flex-col max-sm:p-8">
           <div className="flex flex-col items-center">
-            <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-semibold ">
+            <h2 className="text-[#0B1A3E] dark:text-[#fff] text-2xl font-black ">
               {t("homepage.features.block1.heading")}
             </h2>
             <p className="text-[#5C667E] dark:text-[#fff] text-lg font-medium text-center w-[74%] pt-3 max-sm:w-full font-brando">
@@ -43,11 +43,11 @@ export default async function Features({ locale }: { locale: string }) {
       <div className="max-w-[1600px] mx-auto overflow-hidden xl:scale-x-[100%] lg:w-[80%] md:w-[90%] max-sm:w-[96%] flex gap-3 max-sm:flex-col max-sm:mt-3 mt-3">
         <div className="bg-[#F4F9FF] dark:bg-[#102047] rounded-[32px] p-14 text-center gap-6 grid max-sm:p-8 lg:w-[50%]">
           <div className="text-center flex justify-center">
-            <img src="/asset/Frame20550757.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:hidden"/>
-            <img src="/asset/Framedark.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:block hidden"/>
+            <img src="/asset/Frame57.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:hidden"/>
+            <img src="/asset/Frame122.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:block hidden"/>
           </div>
           <div className="">
-            <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-semibold">
+            <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-black">
               {t("homepage.features.block2.heading")}
             </h2>
             <p className="text-[#5C667E] dark:text-[#fff] text-lg font-medium text-center pt-3 font-brando">
@@ -61,7 +61,7 @@ export default async function Features({ locale }: { locale: string }) {
             <img src="/asset/LiabilityTypesdark.svg" alt={t("homepage.features.block3.imageAlt")} className="dark:block hidden"/>
           </div>
           <div className="">
-            <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-semibold">
+            <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-black">
               {t("homepage.features.block3.heading")}
             </h2>
             <p className="text-[#5C667E] dark:text-[#fff] text-lg font-medium text-center w-[100%] pt-3 font-brando">
