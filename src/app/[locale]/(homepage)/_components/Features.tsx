@@ -26,7 +26,7 @@ export default async function Features({ locale }: { locale: string }) {
       </div>
 
       <div className="mt-[64px] max-w-[1600px] mx-auto overflow-hidden xl:scale-[100%] lg:w-[80%] md:w-[90%] max-sm:w-[96%]">
-        <div className="rounded-[32px] bg-[#F4F9FF] dark:bg-[#102047] flex justify-center items-center p-14 max-sm:flex-col max-sm:p-8">
+        <div className="rounded-[32px] bg-[#F4F9FF] dark:bg-[#102047] flex justify-center items-center p-14 max-sm:flex-col max-sm:p-[10px]">
           <div className="flex flex-col items-center">
             <h2 className="text-[#0B1A3E] dark:text-[#fff] text-2xl font-black ">
               {t("homepage.features.block1.heading")}
