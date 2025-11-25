@@ -41,7 +41,7 @@ export default async function Features({ locale }: { locale: string }) {
       </div>
 
       <div className="max-w-[1600px] mx-auto overflow-hidden xl:scale-x-[100%] lg:w-[80%] md:w-[90%] max-sm:w-[96%] flex gap-3 max-sm:flex-col max-sm:mt-3 mt-3">
-        <div className="bg-[#F4F9FF] dark:bg-[#102047] rounded-[32px] p-14 text-center gap-6 grid max-sm:p-8 lg:w-[50%]">
+        <div className="bg-[#F4F9FF] dark:bg-[#102047] rounded-[32px] p-14 text-center gap-6 grid max-sm:p-[10px] lg:w-[50%]">
           <div className="text-center flex justify-center">
             <img src="/asset/Frame57.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:hidden"/>
             <img src="/asset/Frame122.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:block hidden"/>
@@ -55,7 +55,7 @@ export default async function Features({ locale }: { locale: string }) {
             </p>
           </div>
         </div>
-        <div className="bg-[#F4F9FF] dark:bg-[#102047] rounded-[32px] text-center p-14 gap-6 grid max-sm:p-8 lg:w-[50%]">
+        <div className="bg-[#F4F9FF] dark:bg-[#102047] rounded-[32px] text-center p-14 gap-6 grid max-sm:p-[10px] lg:w-[50%]">
           <div className="text-center flex justify-center">
             <img src="/asset/LiabilityTypes.svg" alt={t("homepage.features.block3.imageAlt")} className="dark:hidden"/>
             <img src="/asset/LiabilityTypesdark.svg" alt={t("homepage.features.block3.imageAlt")} className="dark:block hidden"/>
