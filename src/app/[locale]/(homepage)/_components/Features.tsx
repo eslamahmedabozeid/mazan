@@ -36,7 +36,7 @@ export default async function Features({ locale }: { locale: string }) {
             </p>
           </div>
           <img src="/asset/Frame1820550878.svg" className="dark:hidden" alt={t("homepage.features.block1.imageAlt")} />
-          <img src="/asset/darke3.svg" className="dark:block hidden" alt={t("homepage.features.block1.imageAlt")} />
+          <img src="/asset/asseldark.png" className="dark:block hidden w-[564px] h-[305px]" alt={t("homepage.features.block1.imageAlt")} />
         </div>
       </div>
 
