@@ -44,7 +44,7 @@ export default async function Features({ locale }: { locale: string }) {
         <div className="bg-[#F4F9FF] dark:bg-[#102047] rounded-[32px] p-14 text-center gap-6 grid max-sm:p-[10px] lg:w-[50%]">
           <div className="text-center flex justify-center">
             <img src="/asset/Frame57.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:hidden"/>
-            <img src="/asset/Frame122.svg" alt={t("homepage.features.block2.imageAlt")} className="dark:block hidden"/>
+            <img src="/asset/Worth.png" alt={t("homepage.features.block2.imageAlt")} className="dark:block hidden w-[338px]"/>
           </div>
           <div className="">
             <h2 className="text-[#0B1A3E] dark:text-[#fff] text-xl font-black">
